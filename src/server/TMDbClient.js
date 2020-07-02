@@ -20,10 +20,22 @@ class TMDbClient {
     return new Movie(data);
   }
 
-  async request(path) {
-    const response = await fetch(
-      `${TMDbClient.baseURL}${path}?api_key=${this.apiKey}`
-    );
+  async search(query) {
+    const data = await this.request(`/search/movie`, {
+      query,
+    });
+
+    return data.results.map((movie) => new Movie(movie));
+  }
+
+  async request(path, params = {}) {
+    let url = `${TMDbClient.baseURL}${path}?api_key=${this.apiKey}`;
+
+    for (const [key, value] of Object.entries(params)) {
+      url = `${url}&${key}=${value}`;
+    }
+
+    const response = await fetch(url);
 
     if (response.status !== 200) {
       console.error(response);
