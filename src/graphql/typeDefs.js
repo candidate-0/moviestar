@@ -8,5 +8,6 @@ module.exports = gql`
 
   type Query {
     popular: [Movie!]!
+    movie(id: ID!): Movie
   }
 `;
