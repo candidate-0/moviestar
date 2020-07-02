@@ -2,13 +2,15 @@ import React from "react";
 import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
 import Content from "./Content";
-import Link from "./Link";
+import MovieList from "./MovieList";
 
 const POPULAR = gql`
   query {
     popular {
       id
       title
+      releaseDate
+      posterURL
     }
   }
 `;
@@ -23,15 +25,7 @@ const Popular = () => {
   } else if (error) {
     body = `Error :( ${error}`;
   } else {
-    body = (
-      <ol>
-        {data.popular.map(({ id, title }) => (
-          <li key={id}>
-            <Link to={`/movie/${id}`}>{title}</Link>
-          </li>
-        ))}
-      </ol>
-    );
+    body = <MovieList movies={data.popular} />;
   }
 
   return <Content title="Popular movies">{body}</Content>;

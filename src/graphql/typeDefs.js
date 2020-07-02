@@ -5,10 +5,10 @@ module.exports = gql`
     id: ID!
     title: String!
     overview: String!
-    posterURL: String!
-    releaseDate: String!
-    revenue: Int!
-    runtime: Int!
+    posterURL: String
+    releaseDate: String
+    revenue: Int
+    runtime: Int
     cast: [Actor!]
   }
 
