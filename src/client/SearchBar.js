@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import tw from "twin.macro";
+import debounce from "lodash.debounce";
 
 const SearchInput = tw.input`
   block
@@ -11,11 +12,16 @@ const SearchInput = tw.input`
   border border-gray-200
 `;
 
+const debouncedSearch = debounce((history, query) => {
+  history.replace(`/search?query=${query}`);
+}, 300);
+
 const SearchBar = () => {
   const history = useHistory();
 
   const onChange = (e) => {
-    history.replace(`/search?query=${e.target.value}`);
+    e.persist();
+    debouncedSearch(history, e.target.value);
   };
 
   return (
