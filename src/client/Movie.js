@@ -1,7 +1,9 @@
 import React from "react";
 import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import Content from "./Content";
+import Link from "./Link";
 
 const MOVIE = gql`
   query getMovie($id: ID!) {
@@ -16,18 +18,25 @@ const Movie = () => {
   const { id } = useParams();
   const { data, loading, error } = useQuery(MOVIE, { variables: { id } });
 
-  if (loading) return "Loading...";
-  if (error) return `Error :( ${error}`;
+  let title, body;
 
-  console.log(data);
+  if (loading) {
+    title = "Loading...";
+    body = "Loading...";
+  } else if (error) {
+    title = "Error :(";
+    body = error;
+  } else {
+    title = data.movie.title;
+    body = (
+      <>
+        <p>{data.movie.title}</p>
+        <Link to="/">Go back</Link>
+      </>
+    );
+  }
 
-  return (
-    <div>
-      <h2>{data.movie.title}</h2>
-
-      <Link to="/">Go back</Link>
-    </div>
-  );
+  return <Content title={title}>{body}</Content>;
 };
 
 export default Movie;

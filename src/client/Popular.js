@@ -1,7 +1,8 @@
 import React from "react";
 import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
-import { Link } from "react-router-dom";
+import Content from "./Content";
+import Link from "./Link";
 
 const POPULAR = gql`
   query {
@@ -15,18 +16,25 @@ const POPULAR = gql`
 const Popular = () => {
   const { data, loading, error } = useQuery(POPULAR);
 
-  if (loading) return "Loading...";
-  if (error) return `Error :( ${error}`;
+  let body;
 
-  return (
-    <ol>
-      {data.popular.map(({ id, title }) => (
-        <li key={id}>
-          <Link to={`/movie/${id}`}>{title}</Link>
-        </li>
-      ))}
-    </ol>
-  );
+  if (loading) {
+    body = "Loading...";
+  } else if (error) {
+    body = `Error :( ${error}`;
+  } else {
+    body = (
+      <ol>
+        {data.popular.map(({ id, title }) => (
+          <li key={id}>
+            <Link to={`/movie/${id}`}>{title}</Link>
+          </li>
+        ))}
+      </ol>
+    );
+  }
+
+  return <Content title="Popular movies">{body}</Content>;
 };
 
 export default Popular;

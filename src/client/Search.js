@@ -1,7 +1,9 @@
 import React from "react";
 import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import Content from "./Content";
+import Link from "./Link";
 
 const SEARCH = gql`
   query getSearch($query: String!) {
@@ -16,13 +18,14 @@ const Search = () => {
   const query = new URLSearchParams(useLocation().search).get("query");
   const { data, loading, error } = useQuery(SEARCH, { variables: { query } });
 
-  if (loading) return "Loading...";
-  if (error) return `Error :( ${error}`;
+  let body;
 
-  return (
-    <div>
-      <h2>Search results for "{query}"</h2>
-
+  if (loading) {
+    body = "Loading...";
+  } else if (error) {
+    body = `Error :( ${error}`;
+  } else {
+    body = (
       <ol>
         {data.search.map((movie) => (
           <li key={movie.id}>
@@ -30,8 +33,10 @@ const Search = () => {
           </li>
         ))}
       </ol>
-    </div>
-  );
+    );
+  }
+
+  return <Content title={`Search results for "${query}"`}>{body}</Content>;
 };
 
 export default Search;

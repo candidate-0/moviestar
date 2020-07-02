@@ -23,6 +23,10 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
   plugins: [new HtmlWebpackPlugin({ template: "src/client/template.html" })],
