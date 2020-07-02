@@ -3,7 +3,7 @@ import tw from "twin.macro";
 
 const Header = tw.h2`
   my-4
-  text-2xl font-bold
+  text-3xl font-bold
 `;
 
 const Content = ({ title, children }) => {

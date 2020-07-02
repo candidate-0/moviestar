@@ -15,9 +15,14 @@ class TMDbClient {
   }
 
   async movie(id) {
-    const data = await this.request(`/movie/${id}`);
+    const [data, credits] = await Promise.all([
+      this.request(`/movie/${id}`),
+      this.request(`/movie/${id}/credits`),
+    ]);
 
-    return new Movie(data);
+    console.log(credits.cast);
+
+    return new Movie(data, credits.cast);
   }
 
   async search(query) {
