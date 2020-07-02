@@ -9,7 +9,9 @@ class TMDbClient {
   }
 
   async popular() {
-    return await this.request.data.results.map((movie) => new Movie(movie));
+    const data = await this.request("/movie/popular");
+
+    return data.results.map((movie) => new Movie(movie));
   }
 
   async request(path) {
