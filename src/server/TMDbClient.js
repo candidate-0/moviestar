@@ -1,10 +1,12 @@
 const fetch = require("cross-fetch");
 const Movie = require("./movie");
+const LRU = require("lru-cache");
 
 class TMDbClient {
   static baseURL = "https://api.themoviedb.org/3";
 
   constructor(apiKey) {
+    this.cache = new LRU(100);
     this.apiKey = apiKey;
   }
 
@@ -19,8 +21,6 @@ class TMDbClient {
       this.request(`/movie/${id}`),
       this.request(`/movie/${id}/credits`),
     ]);
-
-    console.log(credits.cast);
 
     return new Movie(data, credits.cast);
   }
@@ -40,15 +40,31 @@ class TMDbClient {
       url = `${url}&${key}=${value}`;
     }
 
-    const response = await fetch(url);
+    return await this.fetchFromCache(url);
+  }
 
-    if (response.status !== 200) {
-      console.error(response);
+  async fetchFromCache(url) {
+    if (this.cache.has(url)) {
+      console.log(`Cache hit for URL: ${url}`);
 
-      throw "TODO";
+      return this.cache.get(url);
+    } else {
+      console.log(`Cache miss for URL: ${url}`);
+
+      const response = await fetch(url);
+
+      if (response.status !== 200) {
+        console.error(response);
+
+        throw "TODO";
+      }
+
+      const data = response.json();
+
+      this.cache.set(url, data);
+
+      return data;
     }
-
-    return await response.json();
   }
 }
 
