@@ -6,13 +6,16 @@ module.exports = {
   output: {
     filename: "app.js",
     path: path.join(__dirname, "public"),
+    publicPath: "/",
   },
   devServer: {
     contentBase: path.join(__dirname, "public"),
+    historyApiFallback: true,
     proxy: {
       "/graphql": "http://localhost:4000",
     },
   },
+  devtool: "source-map",
   module: {
     rules: [
       {

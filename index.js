@@ -5,7 +5,6 @@ const apiKey = process.env.TMDB_API_KEY;
 
 const TMDbClient = require("./src/server/TMDbClient");
 const { ApolloServer } = require("apollo-server-express");
-const { createProxyMiddleware } = require("http-proxy-middleware");
 const express = require("express");
 
 const client = new TMDbClient(apiKey);
