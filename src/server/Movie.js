@@ -2,16 +2,6 @@ const Actor = require("./Actor");
 
 class Movie {
   constructor(movie, cast) {
-    // adult
-    // genre_ids
-    // original_title
-    // original_language
-    // backdrop_path
-    // popularity
-    // vote_count
-    // video
-    // vote_average
-
     this.id = movie.id;
     this.title = movie.title;
     this.overview = movie.overview;

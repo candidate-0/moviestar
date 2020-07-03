@@ -55,6 +55,7 @@ class TMDbClient {
       const response = await fetch(url);
 
       if (response.status !== 200) {
+        console.error("Error from TMDb API");
         console.error(response);
 
         throw "TODO";

@@ -4,6 +4,7 @@ import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
 import { useParams } from "react-router-dom";
 import Content from "./Content";
+import Error from "./Error";
 
 const MOVIE = gql`
   query getMovie($id: ID!) {
@@ -24,11 +25,8 @@ const MOVIE = gql`
 `;
 
 const Poster = tw.img`
+  mx-auto mb-8
   rounded-md
-`;
-
-const List = tw.dl`
-  mr-4
 `;
 
 const Term = tw.dt`
@@ -56,13 +54,13 @@ const Movie = () => {
     title = "Loading...";
     body = "Loading...";
   } else if (error) {
-    title = "Error :(";
-    body = error;
+    title = "Something's not right. 🤔";
+    body = <Error error={error} />;
   } else {
     title = data.movie.title;
     body = (
-      <div tw="flex">
-        <List>
+      <div tw="flex flex-wrap">
+        <dl tw="w-full md:w-3/4">
           <Term>Overview</Term>
           <Data>{data.movie.overview}</Data>
           <Term>Released</Term>
@@ -83,8 +81,10 @@ const Movie = () => {
               ))}
             </ul>
           </Data>
-        </List>
-        <Poster src={data.movie.posterURL} />
+        </dl>
+        <div tw="w-full md:w-1/4 order-first md:order-last">
+          <Poster src={data.movie.posterURL} />
+        </div>
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React from "react";
 import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
 import Content from "./Content";
+import Error from "./Error";
 import MovieList from "./MovieList";
 
 const POPULAR = gql`
@@ -18,17 +19,19 @@ const POPULAR = gql`
 const Popular = () => {
   const { data, loading, error } = useQuery(POPULAR);
 
+  let title = "Popular movies";
   let body;
 
   if (loading) {
     body = "Loading...";
   } else if (error) {
-    body = `Error :( ${error}`;
+    title = "Something's not right. 🤔";
+    body = <Error error={error} />;
   } else {
     body = <MovieList movies={data.popular} />;
   }
 
-  return <Content title="Popular movies">{body}</Content>;
+  return <Content title={title}>{body}</Content>;
 };
 
 export default Popular;
