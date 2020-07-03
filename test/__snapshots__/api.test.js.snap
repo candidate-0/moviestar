@@ -4,8 +4,428 @@ exports[`GraphQL API returns movies by ID 1`] = `
 Object {
   "data": Object {
     "movie": Object {
+      "cast": Array [
+        Object {
+          "id": "3",
+          "name": "Mark Hamill",
+        },
+        Object {
+          "id": "4",
+          "name": "Harrison Ford",
+        },
+        Object {
+          "id": "5",
+          "name": "Carrie Fisher",
+        },
+        Object {
+          "id": "6",
+          "name": "Peter Cushing",
+        },
+        Object {
+          "id": "14",
+          "name": "Alec Guinness",
+        },
+        Object {
+          "id": "7",
+          "name": "Anthony Daniels",
+        },
+        Object {
+          "id": "8",
+          "name": "Kenny Baker",
+        },
+        Object {
+          "id": "15",
+          "name": "Peter Mayhew",
+        },
+        Object {
+          "id": "16",
+          "name": "David Prowse",
+        },
+        Object {
+          "id": "17",
+          "name": "James Earl Jones",
+        },
+        Object {
+          "id": "18",
+          "name": "Phil Brown",
+        },
+        Object {
+          "id": "19",
+          "name": "Shelagh Fraser",
+        },
+        Object {
+          "id": "24",
+          "name": "Jack Purvis",
+        },
+        Object {
+          "id": "25",
+          "name": "Alex McCrindle",
+        },
+        Object {
+          "id": "26",
+          "name": "Eddie Byrne",
+        },
+        Object {
+          "id": "23",
+          "name": "Drewe Henley",
+        },
+        Object {
+          "id": "27",
+          "name": "Denis Lawson",
+        },
+        Object {
+          "id": "28",
+          "name": "Garrick Hagon",
+        },
+        Object {
+          "id": "29",
+          "name": "Jack Klaff",
+        },
+        Object {
+          "id": "21",
+          "name": "William Hootkins",
+        },
+        Object {
+          "id": "30",
+          "name": "Angus MacInnes",
+        },
+        Object {
+          "id": "126",
+          "name": "Jeremy Sinden",
+        },
+        Object {
+          "id": "32",
+          "name": "Graham Ashley",
+        },
+        Object {
+          "id": "33",
+          "name": "Don Henderson",
+        },
+        Object {
+          "id": "34",
+          "name": "Richard LeParmentier",
+        },
+        Object {
+          "id": "35",
+          "name": "Leslie Schofield",
+        },
+        Object {
+          "id": "128",
+          "name": "Michael Leader",
+        },
+        Object {
+          "id": "36",
+          "name": "David Ankrum",
+        },
+        Object {
+          "id": "38",
+          "name": "Scott Beach",
+        },
+        Object {
+          "id": "39",
+          "name": "Lightning Bear",
+        },
+        Object {
+          "id": "40",
+          "name": "Jon Berg",
+        },
+        Object {
+          "id": "41",
+          "name": "Doug Beswick",
+        },
+        Object {
+          "id": "42",
+          "name": "Paul Blake",
+        },
+        Object {
+          "id": "43",
+          "name": "Janice Burchette",
+        },
+        Object {
+          "id": "44",
+          "name": "Ted Burnett",
+        },
+        Object {
+          "id": "45",
+          "name": "John Chapman",
+        },
+        Object {
+          "id": "46",
+          "name": "Gilda Cohen",
+        },
+        Object {
+          "id": "47",
+          "name": "Tim Condren",
+        },
+        Object {
+          "id": "48",
+          "name": "Barry Copping",
+        },
+        Object {
+          "id": "49",
+          "name": "Alfie Curtis",
+        },
+        Object {
+          "id": "50",
+          "name": "Robert Davies",
+        },
+        Object {
+          "id": "51",
+          "name": "Maria De Aragon",
+        },
+        Object {
+          "id": "52",
+          "name": "Robert A. Denham",
+        },
+        Object {
+          "id": "53",
+          "name": "Frazer Diamond",
+        },
+        Object {
+          "id": "54",
+          "name": "Peter Diamond",
+        },
+        Object {
+          "id": "55",
+          "name": "Warwick Diamond",
+        },
+        Object {
+          "id": "56",
+          "name": "Sadie Eden",
+        },
+        Object {
+          "id": "57",
+          "name": "Kim Falkinburg",
+        },
+        Object {
+          "id": "58",
+          "name": "Harry Fielder",
+        },
+        Object {
+          "id": "59",
+          "name": "Ted Gagliano",
+        },
+        Object {
+          "id": "60",
+          "name": "Salo Gardner",
+        },
+        Object {
+          "id": "61",
+          "name": "Steve Gawley",
+        },
+        Object {
+          "id": "62",
+          "name": "Barry Gnome",
+        },
+        Object {
+          "id": "63",
+          "name": "Rusty Goffe",
+        },
+        Object {
+          "id": "64",
+          "name": "Isaac Grand",
+        },
+        Object {
+          "id": "66",
+          "name": "Reg Harding",
+        },
+        Object {
+          "id": "67",
+          "name": "Alan Harris",
+        },
+        Object {
+          "id": "68",
+          "name": "Frank Henson",
+        },
+        Object {
+          "id": "69",
+          "name": "Christine Hewett",
+        },
+        Object {
+          "id": "70",
+          "name": "Arthur Howell",
+        },
+        Object {
+          "id": "71",
+          "name": "Tommy Ilsley",
+        },
+        Object {
+          "id": "72",
+          "name": "Joe Johnston",
+        },
+        Object {
+          "id": "73",
+          "name": "Annette Jones",
+        },
+        Object {
+          "id": "74",
+          "name": "Linda Jones",
+        },
+        Object {
+          "id": "75",
+          "name": "Joe Kaye",
+        },
+        Object {
+          "id": "76",
+          "name": "Colin Michael Kitchens",
+        },
+        Object {
+          "id": "77",
+          "name": "Melissa Kurtz",
+        },
+        Object {
+          "id": "78",
+          "name": "Tiffany L. Kurtz",
+        },
+        Object {
+          "id": "79",
+          "name": "Al Lampert",
+        },
+        Object {
+          "id": "80",
+          "name": "Anthony Lang",
+        },
+        Object {
+          "id": "81",
+          "name": "Laine Liska",
+        },
+        Object {
+          "id": "82",
+          "name": "Derek Lyons",
+        },
+        Object {
+          "id": "83",
+          "name": "Mahjoub",
+        },
+        Object {
+          "id": "84",
+          "name": "Alf Mangan",
+        },
+        Object {
+          "id": "86",
+          "name": "Grant McCune",
+        },
+        Object {
+          "id": "87",
+          "name": "Geoffrey Moon",
+        },
+        Object {
+          "id": "88",
+          "name": "Mandy Morton",
+        },
+        Object {
+          "id": "89",
+          "name": "Lorne Peterson",
+        },
+        Object {
+          "id": "90",
+          "name": "Marcus Powell",
+        },
+        Object {
+          "id": "91",
+          "name": "Shane Rimmer",
+        },
+        Object {
+          "id": "92",
+          "name": "Pam Rose",
+        },
+        Object {
+          "id": "93",
+          "name": "George Roubicek",
+        },
+        Object {
+          "id": "94",
+          "name": "Erica Simmons",
+        },
+        Object {
+          "id": "95",
+          "name": "Angela Staines",
+        },
+        Object {
+          "id": "96",
+          "name": "George Stock",
+        },
+        Object {
+          "id": "97",
+          "name": "Roy Straite",
+        },
+        Object {
+          "id": "98",
+          "name": "Peter Sturgeon",
+        },
+        Object {
+          "id": "99",
+          "name": "Peter Sumner",
+        },
+        Object {
+          "id": "100",
+          "name": "John Sylla",
+        },
+        Object {
+          "id": "101",
+          "name": "Tom Sylla",
+        },
+        Object {
+          "id": "22",
+          "name": "Malcolm Tierney",
+        },
+        Object {
+          "id": "102",
+          "name": "Phil Tippett",
+        },
+        Object {
+          "id": "103",
+          "name": "Burnell Tucker",
+        },
+        Object {
+          "id": "104",
+          "name": "Morgan Upton",
+        },
+        Object {
+          "id": "105",
+          "name": "Jerry Walter",
+        },
+        Object {
+          "id": "106",
+          "name": "Hal Wamsley",
+        },
+        Object {
+          "id": "107",
+          "name": "Larry Ward",
+        },
+        Object {
+          "id": "108",
+          "name": "Diana Sadley Way",
+        },
+        Object {
+          "id": "110",
+          "name": "Bill Weston",
+        },
+        Object {
+          "id": "112",
+          "name": "Fred Wood",
+        },
+        Object {
+          "id": "129",
+          "name": "Colin Higgins",
+        },
+        Object {
+          "id": "132",
+          "name": "Ron Tarr",
+        },
+        Object {
+          "id": "165",
+          "name": "Anthony Forrest",
+        },
+        Object {
+          "id": "166",
+          "name": "Frances Alfred Basil Tomlin",
+        },
+      ],
       "id": "11",
       "overview": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+      "releaseDate": "1977-05-25",
+      "runtime": 121,
       "title": "Star Wars",
     },
   },
@@ -55,14 +475,19 @@ Object {
         "title": "Eurovision Song Contest: The Story of Fire Saga",
       },
       Object {
+        "id": "475430",
+        "overview": "Artemis Fowl is a 12-year-old genius and descendant of a long line of criminal masterminds. He soon finds himself in an epic battle against a race of powerful underground fairies who may be behind his father's disappearance.",
+        "title": "Artemis Fowl",
+      },
+      Object {
         "id": "619592",
         "overview": "A gang of thieves plan a heist during a hurricane and encounter trouble when a disgraced cop tries to force everyone in the building to evacuate.",
         "title": "Force of Nature",
       },
       Object {
-        "id": "475430",
-        "overview": "Artemis Fowl is a 12-year-old genius and descendant of a long line of criminal masterminds. He soon finds himself in an epic battle against a race of powerful underground fairies who may be behind his father's disappearance.",
-        "title": "Artemis Fowl",
+        "id": "496243",
+        "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
+        "title": "Parasite",
       },
       Object {
         "id": "181812",
@@ -75,54 +500,19 @@ Object {
         "title": "Sonic the Hedgehog",
       },
       Object {
-        "id": "496243",
-        "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
-        "title": "Parasite",
-      },
-      Object {
         "id": "475557",
         "overview": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
         "title": "Joker",
       },
       Object {
-        "id": "299536",
-        "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
-        "title": "Avengers: Infinity War",
+        "id": "6795",
+        "overview": "After their father is called into work, two young boys, Walter and Danny, are left in the care of their teenage sister, Lisa, and told they must stay inside. Walter and Danny, who anticipate a boring day, are shocked when they begin playing Zathura, a space-themed board game, which they realize has mystical powers when their house is shot into space. With the help of an astronaut, the boys attempt to return home.",
+        "title": "Zathura: A Space Adventure",
       },
       Object {
-        "id": "11",
-        "overview": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
-        "title": "Star Wars",
-      },
-      Object {
-        "id": "495764",
-        "overview": "Harley Quinn joins forces with a singer, an assassin and a police detective to help a young girl who had a hit placed on her after she stole a rare diamond from a crime lord.",
-        "title": "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
-      },
-      Object {
-        "id": "254904",
-        "overview": "An ex- CIA operative is brought back in on a very personal mission and finds himself pitted against his former pupil in a deadly game involving high level CIA officials and the Russian president-elect.",
-        "title": "The November Man",
-      },
-      Object {
-        "id": "157336",
-        "overview": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
-        "title": "Interstellar",
-      },
-      Object {
-        "id": "595148",
-        "overview": "A Democratic political consultant helps a retired Marine colonel run for mayor in a small, conservative Wisconsin town.",
-        "title": "Irresistible",
-      },
-      Object {
-        "id": "420817",
-        "overview": "A kindhearted street urchin named Aladdin embarks on a magical adventure after finding a lamp that releases a wisecracking genie while a power-hungry Grand Vizier vies for the same lamp that has the power to make their deepest wishes come true.",
-        "title": "Aladdin",
-      },
-      Object {
-        "id": "570670",
-        "overview": "When Cecilia's abusive ex takes his own life and leaves her his fortune, she suspects his death was a hoax. As a series of coincidences turn lethal, Cecilia works to prove that she is being hunted by someone nobody can see.",
-        "title": "The Invisible Man",
+        "id": "807",
+        "overview": "Two homicide detectives are on a desperate hunt for a serial killer whose crimes are based on the \\"seven deadly sins\\" in this dark and haunting film that takes viewers from the tortured remains of one victim to the next. The seasoned Det. Sommerset researches each sin in an effort to get inside the killer's mind, while his novice partner, Mills, scoffs at his efforts to unravel the case.",
+        "title": "Se7en",
       },
       Object {
         "id": "671",
@@ -130,9 +520,14 @@ Object {
         "title": "Harry Potter and the Philosopher's Stone",
       },
       Object {
-        "id": "530915",
-        "overview": "At the height of the First World War, two young British soldiers must cross enemy territory and deliver a message that will stop a deadly attack on hundreds of soldiers.",
-        "title": "1917",
+        "id": "556574",
+        "overview": "An unforgettable cinematic stage performance, the filmed version of the original Broadway production of “Hamilton” combines the best elements of live theater, film and streaming to bring the cultural phenomenon to homes around the world for a thrilling, once-in-a-lifetime experience.",
+        "title": "Hamilton",
+      },
+      Object {
+        "id": "420817",
+        "overview": "A kindhearted street urchin named Aladdin embarks on a magical adventure after finding a lamp that releases a wisecracking genie while a power-hungry Grand Vizier vies for the same lamp that has the power to make their deepest wishes come true.",
+        "title": "Aladdin",
       },
       Object {
         "id": "27205",
@@ -140,9 +535,34 @@ Object {
         "title": "Inception",
       },
       Object {
+        "id": "495764",
+        "overview": "Harley Quinn joins forces with a singer, an assassin and a police detective to help a young girl who had a hit placed on her after she stole a rare diamond from a crime lord.",
+        "title": "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
+      },
+      Object {
         "id": "330457",
         "overview": "Elsa, Anna, Kristoff and Olaf head far into the forest to learn the truth about an ancient mystery of their kingdom.",
         "title": "Frozen II",
+      },
+      Object {
+        "id": "299536",
+        "overview": "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+        "title": "Avengers: Infinity War",
+      },
+      Object {
+        "id": "155",
+        "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+        "title": "The Dark Knight",
+      },
+      Object {
+        "id": "11",
+        "overview": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+        "title": "Star Wars",
+      },
+      Object {
+        "id": "570670",
+        "overview": "When Cecilia's abusive ex takes his own life and leaves her his fortune, she suspects his death was a hoax. As a series of coincidences turn lethal, Cecilia works to prove that she is being hunted by someone nobody can see.",
+        "title": "The Invisible Man",
       },
     ],
   },

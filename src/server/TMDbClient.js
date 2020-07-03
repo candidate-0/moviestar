@@ -3,11 +3,12 @@ const Movie = require("./movie");
 const LRU = require("lru-cache");
 
 class TMDbClient {
-  static baseURL = "https://api.themoviedb.org/3";
+  static baseURL = `https://api.themoviedb.org/3`;
 
-  constructor(apiKey) {
+  constructor(apiKey, baseURL = TMDbClient.baseURL) {
     this.cache = new LRU(100);
     this.apiKey = apiKey;
+    this.baseURL = baseURL;
   }
 
   async popular() {
@@ -34,7 +35,7 @@ class TMDbClient {
   }
 
   async request(path, params = {}) {
-    let url = `${TMDbClient.baseURL}${path}?api_key=${this.apiKey}`;
+    let url = `${this.baseURL}${path}?api_key=${this.apiKey}`;
 
     for (const [key, value] of Object.entries(params)) {
       url = `${url}&${key}=${value}`;
@@ -45,11 +46,11 @@ class TMDbClient {
 
   async fetchFromCache(url) {
     if (this.cache.has(url)) {
-      console.log(`Cache hit for URL: ${url}`);
+      console.debug(`Cache hit for URL: ${url}`);
 
       return this.cache.get(url);
     } else {
-      console.log(`Cache miss for URL: ${url}`);
+      console.debug(`Cache miss for URL: ${url}`);
 
       const response = await fetch(url);
 

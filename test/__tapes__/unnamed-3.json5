@@ -1,0 +1,158 @@
+{
+    meta: {
+        createdAt: '2020-07-03T15:52:54.826Z',
+        host: 'https://api.themoviedb.org/3',
+        resHumanReadable: true,
+        resUncompressed: true,
+    },
+    req: {
+        url: '/movie/11?api_key=b640295b88ce640e7950dc12a25fa117',
+        method: 'GET',
+        headers: {
+            accept: '*/*',
+            'user-agent': 'node-fetch/1.0 (+https://github.com/bitinn/node-fetch)',
+            'accept-encoding': 'gzip,deflate',
+            connection: 'close',
+        },
+        body: '',
+    },
+    res: {
+        status: 200,
+        headers: {
+            'content-type': [
+                'application/json;charset=utf-8',
+            ],
+            'transfer-encoding': [
+                'chunked',
+            ],
+            connection: [
+                'close',
+            ],
+            date: [
+                'Fri, 03 Jul 2020 15:24:21 GMT',
+            ],
+            server: [
+                'openresty',
+            ],
+            'access-control-allow-origin': [
+                '*',
+            ],
+            'access-control-allow-methods': [
+                'GET, HEAD, POST, PUT, DELETE, OPTIONS',
+            ],
+            'access-control-expose-headers': [
+                'ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After, Content-Length, Content-Range',
+            ],
+            'cache-control': [
+                'public, max-age=21600',
+            ],
+            'x-memc': [
+                'HIT',
+            ],
+            'x-memc-key': [
+                'f12cfc476b9b9b443d8d7ab27f4e111f',
+            ],
+            'x-memc-age': [
+                '8340',
+            ],
+            'x-memc-expires': [
+                '13260',
+            ],
+            etag: [
+                'W/"99a21a11597910e3ff9c96eb6b4bcfed"',
+            ],
+            'last-modified': [
+                'Fri, 03 Jul 2020 15:24:21 GMT',
+            ],
+            'content-encoding': [
+                'gzip',
+            ],
+            vary: [
+                'Accept-Encoding',
+            ],
+            'x-cache': [
+                'Hit from cloudfront',
+            ],
+            via: [
+                '1.1 457f6aac6043da8b82d532af40ff19c2.cloudfront.net (CloudFront)',
+            ],
+            'x-amz-cf-pop': [
+                'SFO5-C3',
+            ],
+            'x-amz-cf-id': [
+                '7dJXtl6RZMfuU8OrJO0xkInxBpkjOBEaXCdsjCqidqAXKhkhJkbGXQ==',
+            ],
+            age: [
+                '1713',
+            ],
+        },
+        body: {
+            adult: false,
+            backdrop_path: '/zqkmTXzjkAgXmEWLRsY4UpTWCeo.jpg',
+            belongs_to_collection: {
+                id: 10,
+                name: 'Star Wars Collection',
+                poster_path: '/r8Ph5MYXL04Qzu4QBbq2KjqwtkQ.jpg',
+                backdrop_path: '/d8duYyyC9J5T825Hg7grmaabfxQ.jpg',
+            },
+            budget: 11000000,
+            genres: [
+                {
+                    id: 12,
+                    name: 'Adventure',
+                },
+                {
+                    id: 28,
+                    name: 'Action',
+                },
+                {
+                    id: 878,
+                    name: 'Science Fiction',
+                },
+            ],
+            homepage: 'http://www.starwars.com/films/star-wars-episode-iv-a-new-hope',
+            id: 11,
+            imdb_id: 'tt0076759',
+            original_language: 'en',
+            original_title: 'Star Wars',
+            overview: 'Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.',
+            popularity: 68.215,
+            poster_path: '/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg',
+            production_companies: [
+                {
+                    id: 1,
+                    logo_path: '/o86DbpburjxrqAzEDhXZcyE8pDb.png',
+                    name: 'Lucasfilm Ltd.',
+                    origin_country: 'US',
+                },
+                {
+                    id: 25,
+                    logo_path: '/qZCc1lty5FzX30aOCVRBLzaVmcp.png',
+                    name: '20th Century Fox',
+                    origin_country: 'US',
+                },
+            ],
+            production_countries: [
+                {
+                    iso_3166_1: 'US',
+                    name: 'United States of America',
+                },
+            ],
+            release_date: '1977-05-25',
+            revenue: 775398007,
+            runtime: 121,
+            spoken_languages: [
+                {
+                    iso_639_1: 'en',
+                    name: 'English',
+                },
+            ],
+            status: 'Released',
+            tagline: 'A long time ago in a galaxy far, far away...',
+            title: 'Star Wars',
+            video: false,
+            vote_average: 8.2,
+            vote_count: 13887,
+        },
+    },
+}

@@ -1,0 +1,95 @@
+{
+    meta: {
+        createdAt: '2020-07-03T15:52:54.926Z',
+        host: 'https://api.themoviedb.org/3',
+        resHumanReadable: true,
+        resUncompressed: true,
+    },
+    req: {
+        url: '/search/movie?api_key=b640295b88ce640e7950dc12a25fa117&query=Ocean%27s%20Twelve',
+        method: 'GET',
+        headers: {
+            accept: '*/*',
+            'user-agent': 'node-fetch/1.0 (+https://github.com/bitinn/node-fetch)',
+            'accept-encoding': 'gzip,deflate',
+            connection: 'close',
+        },
+        body: '',
+    },
+    res: {
+        status: 200,
+        headers: {
+            'content-type': [
+                'application/json;charset=utf-8',
+            ],
+            'transfer-encoding': [
+                'chunked',
+            ],
+            connection: [
+                'close',
+            ],
+            date: [
+                'Fri, 03 Jul 2020 15:52:55 GMT',
+            ],
+            server: [
+                'openresty',
+            ],
+            'access-control-allow-origin': [
+                '*',
+            ],
+            'access-control-allow-methods': [
+                'GET, HEAD, POST, PUT, DELETE, OPTIONS',
+            ],
+            'access-control-expose-headers': [
+                'ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After, Content-Length, Content-Range',
+            ],
+            'cache-control': [
+                'public, max-age=120',
+            ],
+            'content-encoding': [
+                'gzip',
+            ],
+            vary: [
+                'Accept-Encoding',
+            ],
+            'x-cache': [
+                'Miss from cloudfront',
+            ],
+            via: [
+                '1.1 06ea20ff21ab652336f17ada0744f860.cloudfront.net (CloudFront)',
+            ],
+            'x-amz-cf-pop': [
+                'SFO5-C3',
+            ],
+            'x-amz-cf-id': [
+                '6krtvhmOmEN_f6DHIId2FVvu9RTDt5eulJOe4FYzsVzG4685uBbhVA==',
+            ],
+        },
+        body: {
+            page: 1,
+            total_results: 1,
+            total_pages: 1,
+            results: [
+                {
+                    popularity: 18.208,
+                    vote_count: 4892,
+                    video: false,
+                    poster_path: '/v0ogdW7JfrssGTk2ugn0IS0kLVj.jpg',
+                    id: 163,
+                    adult: false,
+                    backdrop_path: '/3guCfwRt3MrmO6q56I4F5xN1LYB.jpg',
+                    original_language: 'en',
+                    original_title: "Ocean's Twelve",
+                    genre_ids: [
+                        80,
+                        53,
+                    ],
+                    title: "Ocean's Twelve",
+                    vote_average: 6.5,
+                    overview: 'Danny Ocean reunites with his old flame and the rest of his merry band of thieves in carrying out three huge heists in Rome, Paris and Amsterdam – but a Europol agent is hot on their heels.',
+                    release_date: '2004-12-09',
+                },
+            ],
+        },
+    },
+}
